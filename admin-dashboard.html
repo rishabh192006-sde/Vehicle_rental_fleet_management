@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - VehicleRent</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= ADMIN NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container">
+
+            <div class="logo">
+                Vehicle<span>Rent</span>
+            </div>
+
+            <nav>
+
+                <a href="index.html">
+                    Website
+                </a>
+
+                <a href="admin-dashboard.html" class="active">
+                    Dashboard
+                </a>
+
+                <a href="fleet.html">
+                    Fleet
+                </a>
+
+                <a href="bookings.html">
+                    Bookings
+                </a>
+
+                <a href="login.html">
+                    Logout
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= DASHBOARD HEADER ================= -->
+
+    <section class="page-header admin-header">
+
+        <div class="container">
+
+            <p class="small-title">
+                ADMIN PANEL
+            </p>
+
+            <h1>
+                Dashboard
+            </h1>
+
+            <p>
+                Manage vehicles, bookings and fleet
+                operations from one place.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <main class="admin-dashboard">
+
+        <div class="container">
+
+
+            <!-- ================= STATS ================= -->
+
+            <div class="stats-grid">
+
+
+                <!-- TOTAL VEHICLES -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        🚗
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Vehicles
+                        </span>
+
+                        <h2>
+                            25
+                        </h2>
+
+                        <small>
+                            Fleet vehicles
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- AVAILABLE -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ✅
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Available Vehicles
+                        </span>
+
+                        <h2>
+                            18
+                        </h2>
+
+                        <small>
+                            Ready for rental
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RENTED -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        🚘
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Rented Vehicles
+                        </span>
+
+                        <h2>
+                            05
+                        </h2>
+
+                        <small>
+                            Currently rented
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MAINTENANCE -->
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        🔧
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Maintenance
+                        </span>
+
+                        <h2>
+                            02
+                        </h2>
+
+                        <small>
+                            Under maintenance
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ================= SECOND STATS ================= -->
+
+            <div class="stats-grid admin-second-stats">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        📋
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Bookings
+                        </span>
+
+                        <h2>
+                            42
+                        </h2>
+
+                        <small>
+                            All bookings
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ⏳
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Pending Bookings
+                        </span>
+
+                        <h2>
+                            08
+                        </h2>
+
+                        <small>
+                            Need attention
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        👥
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Registered Users
+                        </span>
+
+                        <h2>
+                            156
+                        </h2>
+
+                        <small>
+                            Total customers
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        💰
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Revenue
+                        </span>
+
+                        <h2>
+                            ₹1.25L
+                        </h2>
+
+                        <small>
+                            Rental revenue
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ================= QUICK ACTIONS ================= -->
+
+            <section class="quick-actions">
+
+                <div class="admin-section-title">
+
+                    <div>
+
+                        <p class="small-title">
+                            MANAGEMENT
+                        </p>
+
+                        <h2>
+                            Quick Actions
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="action-grid">
+
+
+                    <a
+                        href="fleet.html"
+                        class="action-card">
+
+                        <div class="action-icon">
+                            🚗
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Manage Fleet
+                            </h3>
+
+                            <p>
+                                View and manage all vehicles.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+                    <a
+                        href="booking.html"
+                        class="action-card">
+
+                        <div class="action-icon">
+                            📅
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                New Booking
+                            </h3>
+
+                            <p>
+                                Create a new vehicle booking.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+                    <a
+                        href="bookings.html"
+                        class="action-card">
+
+                        <div class="action-icon">
+                            📋
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Manage Bookings
+                            </h3>
+
+                            <p>
+                                View and manage customer bookings.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="action-card">
+
+                        <div class="action-icon">
+                            ➕
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Add Vehicle
+                            </h3>
+
+                            <p>
+                                Add a new vehicle to your fleet.
+                            </p>
+
+                        </div>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= RECENT BOOKINGS ================= -->
+
+            <section class="recent-bookings">
+
+                <div class="admin-section-title">
+
+                    <div>
+
+                        <p class="small-title">
+                            BOOKINGS
+                        </p>
+
+                        <h2>
+                            Recent Bookings
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="bookings.html"
+                        class="secondary-btn">
+
+                        View All
+
+                    </a>
+
+                </div>
+
+
+                <div class="admin-table-container">
+
+                    <table class="admin-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>
+                                    Booking ID
+                                </th>
+
+                                <th>
+                                    Customer
+                                </th>
+
+                                <th>
+                                    Vehicle
+                                </th>
+
+                                <th>
+                                    Date
+                                </th>
+
+                                <th>
+                                    Amount
+                                </th>
+
+                                <th>
+                                    Status
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+
+                            <!-- BOOKING 1 -->
+
+                            <tr>
+
+                                <td>
+                                    VR-2026-00125
+                                </td>
+
+                                <td>
+                                    Rahul Sharma
+                                </td>
+
+                                <td>
+                                    Premium Sedan
+                                </td>
+
+                                <td>
+                                    25 Sep 2026
+                                </td>
+
+                                <td>
+                                    ₹3100
+                                </td>
+
+                                <td>
+
+                                    <span class="status confirmed">
+                                        Confirmed
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- BOOKING 2 -->
+
+                            <tr>
+
+                                <td>
+                                    VR-2026-00124
+                                </td>
+
+                                <td>
+                                    Amit Kumar
+                                </td>
+
+                                <td>
+                                    Family SUV
+                                </td>
+
+                                <td>
+                                    24 Sep 2026
+                                </td>
+
+                                <td>
+                                    ₹4500
+                                </td>
+
+                                <td>
+
+                                    <span class="status pending">
+                                        Pending
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- BOOKING 3 -->
+
+                            <tr>
+
+                                <td>
+                                    VR-2026-00123
+                                </td>
+
+                                <td>
+                                    Priya Singh
+                                </td>
+
+                                <td>
+                                    City Bike
+                                </td>
+
+                                <td>
+                                    23 Sep 2026
+                                </td>
+
+                                <td>
+                                    ₹1200
+                                </td>
+
+                                <td>
+
+                                    <span class="status confirmed">
+                                        Confirmed
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- BOOKING 4 -->
+
+                            <tr>
+
+                                <td>
+                                    VR-2026-00122
+                                </td>
+
+                                <td>
+                                    Ankit Verma
+                                </td>
+
+                                <td>
+                                    City Hatchback
+                                </td>
+
+                                <td>
+                                    22 Sep 2026
+                                </td>
+
+                                <td>
+                                    ₹2000
+                                </td>
+
+                                <td>
+
+                                    <span class="status completed">
+                                        Completed
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= FLEET OVERVIEW ================= -->
+
+            <section class="fleet-overview">
+
+                <div class="admin-section-title">
+
+                    <div>
+
+                        <p class="small-title">
+                            FLEET STATUS
+                        </p>
+
+                        <h2>
+                            Fleet Overview
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="fleet.html"
+                        class="secondary-btn">
+
+                        Manage Fleet
+
+                    </a>
+
+                </div>
+
+
+                <div class="fleet-overview-grid">
+
+
+                    <div class="overview-card">
+
+                        <div class="overview-top">
+
+                            <span>
+                                Cars
+                            </span>
+
+                            <strong>
+                                15
+                            </strong>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div
+                                class="progress"
+                                style="width: 70%;">
+                            </div>
+
+                        </div>
+
+                        <p>
+                            10 available
+                        </p>
+
+                    </div>
+
+
+                    <div class="overview-card">
+
+                        <div class="overview-top">
+
+                            <span>
+                                SUVs
+                            </span>
+
+                            <strong>
+                                05
+                            </strong>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div
+                                class="progress"
+                                style="width: 60%;">
+                            </div>
+
+                        </div>
+
+                        <p>
+                            3 available
+                        </p>
+
+                    </div>
+
+
+                    <div class="overview-card">
+
+                        <div class="overview-top">
+
+                            <span>
+                                Bikes
+                            </span>
+
+                            <strong>
+                                03
+                            </strong>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div
+                                class="progress"
+                                style="width: 80%;">
+                            </div>
+
+                        </div>
+
+                        <p>
+                            2 available
+                        </p>
+
+                    </div>
+
+
+                    <div class="overview-card">
+
+                        <div class="overview-top">
+
+                            <span>
+                                Scooters
+                            </span>
+
+                            <strong>
+                                02
+                            </strong>
+
+                        </div>
+
+                        <div class="progress-bar">
+
+                            <div
+                                class="progress"
+                                style="width: 50%;">
+                            </div>
+
+                        </div>
+
+                        <p>
+                            1 available
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+
+            <div class="footer-about">
+
+                <h2>
+                    Vehicle<span>Rent</span>
+                </h2>
+
+                <p>
+                    A simple and reliable platform for
+                    vehicle rental and fleet management.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    Admin Links
+                </h3>
+
+                <a href="admin-dashboard.html">
+                    Dashboard
+                </a>
+
+                <a href="fleet.html">
+                    Fleet
+                </a>
+
+                <a href="bookings.html">
+                    Bookings
+                </a>
+
+                <a href="index.html">
+                    Website
+                </a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    Email: admin@vehiclerent.com
+                </p>
+
+                <p>
+                    Phone: +91 98765 43210
+                </p>
+
+                <p>
+                    India
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 VehicleRent. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
