@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fleet Management - VehicleRent</title>
+
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="container">
+
+            <div class="logo">
+                Vehicle<span>Rent</span>
+            </div>
+
+            <nav>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="vehicles.html">
+                    Vehicles
+                </a>
+
+                <a href="booking.html">
+                    Booking
+                </a>
+
+                <a href="bookings.html">
+                    My Bookings
+                </a>
+
+                <a href="fleet.html" class="active">
+                    Fleet
+                </a>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="signup.html" class="signup-btn">
+                    Sign Up
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="page-header">
+
+        <div class="container">
+
+            <p class="small-title">
+                FLEET MANAGEMENT
+            </p>
+
+            <h1>
+                Manage Your Fleet
+            </h1>
+
+            <p>
+                Monitor vehicles, availability and
+                fleet information in one place.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FLEET STATS ================= -->
+
+    <section class="fleet-stats">
+
+        <div class="container">
+
+            <div class="stats-grid">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        🚗
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Total Vehicles
+                        </span>
+
+                        <h2>
+                            25
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ✅
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Available
+                        </span>
+
+                        <h2>
+                            18
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        🚘
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Currently Rented
+                        </span>
+
+                        <h2>
+                            05
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        🔧
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Maintenance
+                        </span>
+
+                        <h2>
+                            02
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FLEET CONTENT ================= -->
+
+    <main class="fleet-page">
+
+        <div class="container">
+
+
+            <!-- TOP BAR -->
+
+            <div class="fleet-top">
+
+                <div>
+
+                    <h2>
+                        Vehicle Fleet
+                    </h2>
+
+                    <p>
+                        Complete list of vehicles in your fleet.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="#"
+                    class="primary-btn">
+
+                    + Add Vehicle
+
+                </a>
+
+            </div>
+
+
+            <!-- ================= FILTER ================= -->
+
+            <div class="fleet-filter">
+
+                <div class="filter-item">
+
+                    <label>
+                        Search
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Search vehicle...">
+
+                </div>
+
+
+                <div class="filter-item">
+
+                    <label>
+                        Vehicle Type
+                    </label>
+
+                    <select>
+
+                        <option>
+                            All Types
+                        </option>
+
+                        <option>
+                            Sedan
+                        </option>
+
+                        <option>
+                            SUV
+                        </option>
+
+                        <option>
+                            Hatchback
+                        </option>
+
+                        <option>
+                            Bike
+                        </option>
+
+                        <option>
+                            Scooter
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="filter-item">
+
+                    <label>
+                        Status
+                    </label>
+
+                    <select>
+
+                        <option>
+                            All Status
+                        </option>
+
+                        <option>
+                            Available
+                        </option>
+
+                        <option>
+                            Rented
+                        </option>
+
+                        <option>
+                            Maintenance
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button class="search-btn">
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- ================= VEHICLE TABLE ================= -->
+
+            <div class="fleet-table-container">
+
+                <table class="fleet-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Vehicle
+                            </th>
+
+                            <th>
+                                Type
+                            </th>
+
+                            <th>
+                                Registration
+                            </th>
+
+                            <th>
+                                Price / Day
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Action
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <!-- VEHICLE 1 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="table-vehicle">
+
+                                    <div class="table-image">
+                                        🚘
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Premium Sedan
+                                        </strong>
+
+                                        <span>
+                                            2024 Model
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                Sedan
+                            </td>
+
+
+                            <td>
+                                UP-80-AB-1234
+                            </td>
+
+
+                            <td>
+                                ₹1500
+                            </td>
+
+
+                            <td>
+
+                                <span class="status available">
+                                    Available
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <a href="#">
+                                    View
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- VEHICLE 2 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="table-vehicle">
+
+                                    <div class="table-image">
+                                        🚙
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Family SUV
+                                        </strong>
+
+                                        <span>
+                                            2023 Model
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                SUV
+                            </td>
+
+
+                            <td>
+                                UP-80-CD-5678
+                            </td>
+
+
+                            <td>
+                                ₹2200
+                            </td>
+
+
+                            <td>
+
+                                <span class="status rented">
+                                    Rented
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <a href="#">
+                                    View
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- VEHICLE 3 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="table-vehicle">
+
+                                    <div class="table-image">
+                                        🚗
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            City Hatchback
+                                        </strong>
+
+                                        <span>
+                                            2024 Model
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                Hatchback
+                            </td>
+
+
+                            <td>
+                                UP-80-EF-9012
+                            </td>
+
+
+                            <td>
+                                ₹1000
+                            </td>
+
+
+                            <td>
+
+                                <span class="status available">
+                                    Available
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <a href="#">
+                                    View
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- VEHICLE 4 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="table-vehicle">
+
+                                    <div class="table-image">
+                                        🏍️
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            City Bike
+                                        </strong>
+
+                                        <span>
+                                            2025 Model
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                Bike
+                            </td>
+
+
+                            <td>
+                                UP-80-GH-3456
+                            </td>
+
+
+                            <td>
+                                ₹600
+                            </td>
+
+
+                            <td>
+
+                                <span class="status available">
+                                    Available
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <a href="#">
+                                    View
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+
+                        <!-- VEHICLE 5 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="table-vehicle">
+
+                                    <div class="table-image">
+                                        🚐
+                                    </div>
+
+                                    <div>
+
+                                        <strong>
+                                            Travel MUV
+                                        </strong>
+
+                                        <span>
+                                            2023 Model
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+                                MUV
+                            </td>
+
+
+                            <td>
+                                UP-80-IJ-7890
+                            </td>
+
+
+                            <td>
+                                ₹2500
+                            </td>
+
+
+                            <td>
+
+                                <span class="status maintenance">
+                                    Maintenance
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <a href="#">
+                                    View
+                                </a>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content container">
+
+
+            <div class="footer-about">
+
+                <h2>
+                    Vehicle<span>Rent</span>
+                </h2>
+
+                <p>
+                    A simple and reliable platform for
+                    vehicle rental and fleet management.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="vehicles.html">
+                    Vehicles
+                </a>
+
+                <a href="booking.html">
+                    Booking
+                </a>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </div>
+
+
+            <div class="footer-contact">
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    Email: support@vehiclerent.com
+                </p>
+
+                <p>
+                    Phone: +91 98765 43210
+                </p>
+
+                <p>
+                    India
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 VehicleRent. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
